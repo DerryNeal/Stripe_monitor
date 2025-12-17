@@ -1,0 +1,30 @@
+{
+  "name": "stripe-analytics",
+  "version": "1.0.0",
+  "description": "Stripe payment analytics dashboard based on metadata",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "sync": "node src/jobs/sync.js"
+  },
+  "keywords": [
+    "stripe",
+    "analytics",
+    "payment"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "better-sqlite3": "^9.2.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-basic-auth": "^1.2.1",
+    "node-cron": "^3.0.3",
+    "stripe": "^14.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
